@@ -3,10 +3,10 @@
 skeleton- קלאסס בסיסי
 בנוי מ-צירים(JOINTS) ומעצמות(BONES)
 יש לו ציר מרכזי שהוא "core" וממנו נבנים כל שאר האיברים.
-בהתחלה נבנה הציר המרכזי: self.core = Joint("core/neck", x=200, y=200)
+בהתחלה נבנה הציר המרכזי: /n self.core = Joint("core/neck", x=200, y=200)
 ועליו נבנה הראש:self.head = Head( self.core)
 מלמטה ממשיכה אותו הבטן(שגם מייוצגת ע"י עצם):self.stomach = Bone("stomach",base_joint = self.core ,length = 60 ,angel =  270 )
-ואז יש מילון של איברים שהם מורכבים מעצמות וצירים, הידיים והרגליים הם אוסף של צירים:
+ואז יש מילון של איברים שהם מורכבים מעצמות וצירים, הידיים והרגליים הם אוסף של צירים: /n
 self.limbs = {
             "right_arm": Limb("right_arm", self.core, 40, 35),
             "left_arm": Limb("left_arm", self.core, 40, 35),
