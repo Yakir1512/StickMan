@@ -4,3 +4,7 @@ class Joint:
         self.x = x
         self.y = y
         self.angle = angle
+
+    # הגדרת זווית חדשה
+    def set_angle(self, new_angle):
+        self.angle = new_angle
